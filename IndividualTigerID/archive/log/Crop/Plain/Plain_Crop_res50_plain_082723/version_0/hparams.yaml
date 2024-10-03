@@ -1,0 +1,35 @@
+algorithm: Plain
+annotation_dir: ./data/imgs
+batch_size: 32
+conf_id: Crop_res50_plain_082723
+dataset_name: Custom_Crop
+dataset_root: ./data/imgs
+evaluate: null
+gamma: 0.1
+id_to_labels:
+  0: Not Tiger
+  1: Tiger
+log_dir: Crop
+log_interval: 10
+lr_classifier: 0.01
+lr_feature: 0.01
+model_name: PlainResNetClassifier
+momentum_classifier: 0.9
+momentum_feature: 0.9
+num_classes: 2
+num_epochs: 15
+num_layers: 50
+num_workers: 8
+parallel: 0
+predict: false
+predict_root: ''
+split_data: true
+split_path: ./data/imgs/tiger_binary.csv
+split_type: random
+step_size: 10
+test_size: 0.2
+val: false
+val_size: 0.2
+weight_decay_classifier: 0.0005
+weight_decay_feature: 0.0005
+weights_init: ImageNet
